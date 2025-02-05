@@ -1,7 +1,7 @@
 import time
 timestamp = int(time.strftime("%H"))
 currenttime = time.strftime('%H:%M:%S')
-def greetyouser():
+def greetuser():
   if timestamp >= 0 and timestamp < 12:
     print("Good Morning Sir")
   elif timestamp >= 12 and timestamp <= 16:
@@ -10,5 +10,5 @@ def greetyouser():
     print("Good Night Sir")
   else:
     print("Good Evening Sir")
-greetyouser()    
+greetuser()    
 print("The current time is", currenttime)
