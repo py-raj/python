@@ -9,9 +9,9 @@ def calculator():
   print("4. Division")
   
   choice = input("Enter choice (1/2/3/4): ")
-  # if choice >= '5' and choice == 0:
-  #   print("Invalid input ")
-  #   return calculator()
+  if choice > 4 or choice == 0:
+    print("Invalid input ")
+    return calculator()
   
   num1 = float(int(input("Enter first number: ")))
   num2 = float(int(input("Enter second number: ")))
